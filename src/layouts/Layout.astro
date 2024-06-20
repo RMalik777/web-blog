@@ -1,0 +1,33 @@
+---
+import "../styles/globals.css";
+import "@fontsource-variable/lexend";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Blog | Rafli Malik</title>
+    <meta name="description" content="Rafli Malik personal blog." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="stylesheet" href="/src/styles/global.css" />
+
+    <meta property="og:title" content="Rafli's Blog" />
+    <meta
+      property="og:description"
+      content="Front End Developer and Tech Enthusiast"
+    />
+    <meta property="og:url" content="https://www.raflimalik.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Rafli Malik" />
+  </head>
+  <body class="min-w-dvw h-fit min-h-dvh max-w-full">
+    <slot />
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js"
+      data-cf-beacon='{"token": "c35701a9b6a24f8b83f82c165fc37c96"}'></script>
+  </body>
+</html>

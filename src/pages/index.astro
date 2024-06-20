@@ -1,38 +1,13 @@
 ---
-
+import Layout from "../layouts/Layout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<title>Blog | Rafli Malik</title>
-		<meta name="description" content="Rafli Malik personal blog." />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<link rel="stylesheet" href="/src/styles/global.css" />
-
-		<meta property="og:title" content="Rafli Malik" />
-		<meta
-			property="og:description"
-			content="Front End Developer and Tech Enthusiast"
-		/>
-		<meta property="og:url" content="https://www.raflimalik.com/" />
-		<meta property="og:site_name" content="Rafli Malik" />
-	</head>
-	<body>
-		<main
-			class="min-h-dvh h-fit min-w-dvw max-w-full flex flex-col items-center justify-center gap-8">
-			<h1 class="text-2xl sm:text-3xl md:text-34xl lg:text-5xl">
-				Coming Soon...
-			</h1>
-			<hr class="w-1/4 h-1 bg-zinc-300" />
-		</main>
-		<!-- Cloudflare Web Analytics -->
-		<script
-			defer
-			src="https://static.cloudflareinsights.com/beacon.min.js"
-			data-cf-beacon='{"token": "c35701a9b6a24f8b83f82c165fc37c96"}'
-		></script><!-- End Cloudflare Web Analytics -->
-	</body>
-</html>
+<Layout>
+	<main
+		class="min-h-dvh h-fit min-w-dvw max-w-full flex flex-col items-center justify-center gap-8">
+		<h1 class="text-2xl sm:text-3xl md:text-34xl lg:text-5xl text-[#8C5CFF]">
+			Coming Soon...
+		</h1>
+		<hr class="w-1/4 h-1 bg-zinc-300" />
+	</main>
+</Layout>
