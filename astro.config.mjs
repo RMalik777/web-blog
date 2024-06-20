@@ -8,7 +8,7 @@ import tailwind from "@astrojs/tailwind";
 const { PUBLIC_SANITY_PROJECT_ID, PUBLIC_SANITY_DATASET } = loadEnv(
   import.meta.env.MODE,
   process.cwd(),
-  "",
+  ""
 );
 
 const projectId = PUBLIC_SANITY_PROJECT_ID;
@@ -25,6 +25,8 @@ export default defineConfig({
       studioBasePath: "/admin",
     }),
     react(),
-    tailwind(),
+    tailwind({
+      applyBaseStyles: false,
+    }),
   ],
 });
